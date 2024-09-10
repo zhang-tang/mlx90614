@@ -1,0 +1,11 @@
+{
+    "mlx90614.init|block":"初始化MLX90614地址為 %addr",
+    "mlx90614.setCalibration|block":"設定發射率校準係數 %factor (範圍0-1)",
+    "mlx90614.measureValue|block":"MLX90614量測 %type %unit",
+    "mlx90614.DataType.Object|block":"物體",
+    "mlx90614.DataType.Environment|block":"環境",
+    "mlx90614.Unit.Celsius|block":"℃",
+    "mlx90614.Unit.Fahrenheit|block":"F",
+
+    "{id:category}mlx90614": "⾮接觸式紅外溫度傳感器"
+}

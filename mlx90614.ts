@@ -1,38 +1,57 @@
 
-/**
-* 使用此文件来定义自定义函数和图形块。
-* 想了解更详细的信息，请前往 https://makecode.microbit.org/blocks/custom
-*/
 
-enum MyEnum {
-    //% block="one"
-    One,
-    //% block="two"
-    Two
-}
 
-/**
- * Custom blocks
- */
-//% weight=100 color=#0fbc11 icon=""
-namespace custom {
+//% block="Non-contact IR Temperature Sensor"
+//% weight=100 color=#5b3fe8 icon="\uf022"
+namespace mlx90614 {
+    
+    export enum DataType {
+        //% block="Object"
+        Object = 1,
+        //% block="Environment"
+        Environment = 2,
+    }
+
+    export enum Unit {
+        //% block="℃"
+        Celsius = 1,
+        //% block="F"
+        Fahrenheit = 2,
+    }
+    
     /**
-     * TODO: describe your function here
-     * @param n describe parameter here, eg: 5
-     * @param s describe parameter here, eg: "Hello"
-     * @param e describe parameter here
+     * ...
+     * @param addr to addr ,eg: 0x5A
      */
-    //% block
-    export function foo(n: number, s: string, e: MyEnum): void {
-        // Add code here
+
+    //% block="Initialize MLX90614 address as %addr"
+    //% weight=90
+    export function init(addr: number) {
+        
     }
 
     /**
-     * TODO: describe your function here
-     * @param value describe value here, eg: 5
+     * ...
+     * @param factor to factor ,eg: 1
      */
-    //% block
-    export function fib(value: number): number {
-        return value <= 1 ? value : fib(value -1) + fib(value - 2);
+
+    //% block="Set the emissivity calibration coefficient %factor within the range of 0-1"
+    //% factor.min=0 factor.max=1 factor.defl=1
+    //% weight=90
+    export function setCalibration(factor: number) {
+         
     }
+
+    /**
+     * ...
+     * @param type to type ,eg: DataType.Object
+     * @param unit to unit ,eg: Unit.Celsius
+     */
+
+    //% block="MLX90614 measurement %type %unit"
+    //% weight=90
+    export function measureValue(type: DataType, unit: Unit): number {
+        return 0;
+    }
+
 }
