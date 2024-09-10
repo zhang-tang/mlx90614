@@ -37,7 +37,7 @@ namespace mlx90614 {
 
     //% block="Set the emissivity calibration coefficient %factor within the range of 0-1"
     //% factor.min=0 factor.max=1 factor.defl=1
-    //% weight=90
+    //% weight=80
     export function setCalibration(factor: number) {
          
     }
@@ -49,7 +49,7 @@ namespace mlx90614 {
      */
 
     //% block="MLX90614 measurement %type %unit"
-    //% weight=90
+    //% weight=70
     export function measureValue(type: DataType, unit: Unit): number {
         return 0;
     }

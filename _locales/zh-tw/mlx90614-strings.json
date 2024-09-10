@@ -7,5 +7,6 @@
     "mlx90614.Unit.Celsius|block":"℃",
     "mlx90614.Unit.Fahrenheit|block":"F",
 
+    "mlx90614|block": "⾮接觸式紅外溫度傳感器",
     "{id:category}mlx90614": "⾮接觸式紅外溫度傳感器"
 }

@@ -1,11 +1,12 @@
 {
     "mlx90614.init|block":"初始化MLX90614地址为 %addr",
-    "mlx90614.setCalibration|block":"设置发射率校准系数 %factor (范围0-1)",
+    "mlx90614.setCalibration|block":"设置发射率校准系数  %factor (范围0-1)",
     "mlx90614.measureValue|block":"MLX90614测量 %type %unit",
     "mlx90614.DataType.Object|block":"物体",
     "mlx90614.DataType.Environment|block":"环境",
     "mlx90614.Unit.Celsius|block":"℃",
     "mlx90614.Unit.Fahrenheit|block":"F",
 
+    "mlx90614|block": "⾮接触式红外温度传感器",
     "{id:category}mlx90614": "⾮接触式红外温度传感器"
 }
